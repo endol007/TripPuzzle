@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center">
+
+      <!--  <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/travelgo_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  트레벨 고 시험 첫 페이지"
+            android:textColor="#000069"
+            android:textSize="15dp" />-->
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/travelid"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:hint="아이디"
+        android:paddingLeft="10dp"
+        android:background="#DCDCDC" />
+
+    <!--<ImageView
+        android:layout_width="296dp"
+        android:layout_height="2dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="125dp"
+        android:src="@drawable/line_login" />
+-->
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="100dp"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:background="#DCDCDC" />
+
+   <!-- <ImageView
+        android:layout_width="296dp"
+        android:layout_height="2dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="175dp"
+        android:src="@drawable/line_login" />-->
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="290dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="로그인"
+        android:textColor="#6464ff"
+        android:background="@drawable/buttonshape"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/registerbtn"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/loginbtn"
+        android:layout_alignLeft="@+id/loginbtn"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonshape"
+        android:text="회원가입"
+        android:textColor="#6464ff"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/findidbtn"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/loginbtn"
+        android:layout_alignRight="@+id/loginbtn"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/buttonshape"
+        android:text="회원정보 찾기"
+        android:textColor="#6464ff"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/snsloginbtn"
+        android:layout_width="290dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/loginbtn"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/buttonshape"
+        android:text="SNS연동해서 로그인하기"
+        android:textColor="#6464ff"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_login_err"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="5dp"
+        android:text=" *아이디와 일치하는 비밀번호가 아닙니다"
+        android:textColor="#fb3a2f"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <TextView
+        android:id="@+id/txt_login_err_noinput"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="5dp"
+        android:text=" *아이디와 비밀번호를 모두 입력해주세요"
+        android:textColor="#fb3a2f"
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent" />
+    </RelativeLayout>
+
+</RelativeLayout>
