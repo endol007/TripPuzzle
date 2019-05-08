@@ -17,6 +17,7 @@ public class GpsActivity extends Activity {
     private Button btnShowLocation;
     private TextView txtLat;
     private TextView txtLon;
+
     private TextView txtAlt;
     //고도 테스트 부분
 

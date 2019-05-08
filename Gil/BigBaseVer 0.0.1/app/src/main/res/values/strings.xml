@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BigBase</string>
+    <string name="facebook_app_key">325145631338060</string>
+    <string name="kakao_app_key">c83107045531ed6992c8ba4a096d8534</string>
+</resources>
