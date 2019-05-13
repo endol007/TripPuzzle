@@ -99,6 +99,17 @@ public class Login extends AppCompatActivity implements OnClickListener{
         });
         ///GPS페이지 이동
 
+        Button communitybtn = (Button)findViewById(R.id.communitybtn);
+
+        communitybtn.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent communityintent = new Intent(Login.this, Community.class);
+                Login.this.startActivity(communityintent);
+                finish();
+            }
+        });
+        ///커뮤니티 이동
 
         Button loginokbtn = (Button)findViewById(R.id.loginokbtn);
 

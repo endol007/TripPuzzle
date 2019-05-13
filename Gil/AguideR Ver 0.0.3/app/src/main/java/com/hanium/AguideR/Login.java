@@ -170,7 +170,7 @@ public class Login extends AppCompatActivity implements OnClickListener{
             @Override
             public void onClick(View v) {
 
-                Intent jspregisterintent = new Intent(Login.this, JspLoginRegister.class);
+                Intent jspregisterintent = new Intent(Login.this, JspRegister2.class);
                 Login.this.startActivity(jspregisterintent);
                 finish();
 

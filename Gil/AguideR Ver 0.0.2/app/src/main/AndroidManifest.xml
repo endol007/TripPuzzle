@@ -44,6 +44,7 @@
         <activity android:name="com.hanium.AguideR.GpsLogic" />
         <activity android:name="com.hanium.AguideR.JspRegisterRequest"/>
         <activity android:name=".JspLoginRegister"/>
+        <activity android:name=".Community"/>
     </application>
 
 </manifest>
