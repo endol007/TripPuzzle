@@ -24,7 +24,7 @@ import java.net.URL;
 
 public class JspGpsRegister extends Activity {
 
-    EditText regid, regpw, regname, regage, regsex, regphone, regmail;
+    EditText regid, regpw, regname, regage, regphone, regmail;
     Button registerbtn, regtolbtn;
     CheckBox regsexman, regsexwoman;
 
@@ -50,7 +50,6 @@ public class JspGpsRegister extends Activity {
         regpw = (EditText) findViewById(R.id.regpw);
         regname = (EditText) findViewById(R.id.regname);
         regage = (EditText) findViewById(R.id.regage);
-        regsex = (EditText) findViewById(R.id.regsex);
         regphone = (EditText) findViewById(R.id.regphone);
         regmail = (EditText) findViewById(R.id.regmail);
 
@@ -62,13 +61,13 @@ public class JspGpsRegister extends Activity {
 
         regsexman.setOnClickListener(new View.OnClickListener(){
             public void onClick(View V) {
-                resultSex = "남자";
+                resultSex = "Man";
             }
         });
 
         regsexwoman.setOnClickListener(new View.OnClickListener(){
             public void onClick(View V) {
-                resultSex = "여자";
+                resultSex = "Woman";
             }
         });
 
@@ -107,8 +106,12 @@ public class JspGpsRegister extends Activity {
                 String userPhone = regphone.getText().toString();
                 String userMail = regmail.getText().toString();
 
+
+                gps = new GpsInfo(JspGpsRegister.this);
                 double latitu = gps.getLatitude();
                 double longit = gps.getLongitude();
+
+
 
                 String gpsLati = Double.toString(latitu);
                 String gpsLong = Double.toString(longit);

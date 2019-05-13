@@ -57,13 +57,13 @@ public class JspRegister2 extends Activity {
 
         regsexman.setOnClickListener(new View.OnClickListener(){
             public void onClick(View V) {
-                resultSex = "남자";
+                resultSex = "Man";
             }
         });
 
         regsexwoman.setOnClickListener(new View.OnClickListener(){
             public void onClick(View V) {
-                resultSex = "여자";
+                resultSex = "Woman";
             }
         });
 
