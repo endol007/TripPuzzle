@@ -44,7 +44,6 @@ public class GpsLogic extends AppCompatActivity {
 
         getgpsresult.setText(String.valueOf(latitude));
 
-        //다른 클래스 에서 상속 받은애 다시 선언해 주고 메소드 뽑아 오는 모습
 
 
 
