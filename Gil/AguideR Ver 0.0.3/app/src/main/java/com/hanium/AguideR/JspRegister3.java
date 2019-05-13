@@ -7,12 +7,9 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.Spinner;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -22,17 +19,16 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class JspRegister2 extends Activity {
+public class JspRegister3 extends Activity {
 
     Button registerbtn, regtolbtn;
-    String resultSex = ""; // 체크되었을 때 값을 저장할 스트링 값
 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.jspregister2);
+        setContentView(R.layout.jspregister3);
         //execute의 매개값은
         //sendMsg = "id="+strings[0]+"&pwd="+strings[1];
         //doInBackround에서 사용된 문자열 배열에 필요한 값을 넣습니다.
@@ -48,25 +44,10 @@ public class JspRegister2 extends Activity {
         final EditText regage = (EditText) findViewById(R.id.regage);
         final EditText regphone = (EditText) findViewById(R.id.regphone);
         final EditText regmail = (EditText) findViewById(R.id.regmail);
+        final EditText regsex = (EditText) findViewById(R.id.regsex);
 
         registerbtn = (Button) findViewById(R.id.regbtn);
         regtolbtn = (Button) findViewById(R.id.regtolbtn);
-
-        final CheckBox regsexman = (CheckBox) findViewById(R.id.regsexman);
-        final CheckBox regsexwoman = (CheckBox) findViewById(R.id.regsexwoman);
-
-        regsexman.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View V) {
-                resultSex = "남자";
-            }
-        });
-
-        regsexwoman.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View V) {
-                resultSex = "여자";
-            }
-        });
-
 
 
 
@@ -80,8 +61,8 @@ public class JspRegister2 extends Activity {
             @Override
             public void onClick(View v) {
 
-                Intent tologinintent = new Intent(JspRegister2.this, Login.class);
-                JspRegister2.this.startActivity(tologinintent);
+                Intent tologinintent = new Intent(JspRegister3.this, Login.class);
+                JspRegister3.this.startActivity(tologinintent);
                 finish();
 
             }
@@ -98,7 +79,7 @@ public class JspRegister2 extends Activity {
                 String userPassword = regpw.getText().toString();
                 String userName = regname.getText().toString();
                 int userAge = Integer.parseInt(regage.getText().toString());
-                String userSex = resultSex;
+                String userSex = regsex.getText().toString();
                 String userPhone = regphone.getText().toString();
                 String userMail = regmail.getText().toString();
 
@@ -112,6 +93,7 @@ public class JspRegister2 extends Activity {
                 } catch (Exception e) {
 
                 }
+
             }
         });
 

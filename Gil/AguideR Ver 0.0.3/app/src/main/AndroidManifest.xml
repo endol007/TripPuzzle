@@ -46,6 +46,7 @@
         <activity android:name=".JspLoginRegister"/>
         <activity android:name=".JspRegister2"/>
         <activity android:name=".JspGpsRegister"/>
+        <activity android:name=".JspRegister3"/>
     </application>
 
 </manifest>
