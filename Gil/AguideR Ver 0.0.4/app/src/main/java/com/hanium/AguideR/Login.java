@@ -151,7 +151,7 @@ public class Login extends AppCompatActivity implements OnClickListener{
                         finish();
 
                     } if(result.equals("noId")) {
-                        Toast.makeText(getApplicationContext(), "아이디가 존재하지 않습니다.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "가입정보가 일치 하지 않습니다.", Toast.LENGTH_SHORT).show();
                         finish();
                     }
 
@@ -165,7 +165,7 @@ public class Login extends AppCompatActivity implements OnClickListener{
             @Override
             public void onClick(View v) {
 
-                Intent registerintent = new Intent(Login.this, Register.class);
+                Intent registerintent = new Intent(Login.this, JspGpsRegister.class);
                 Login.this.startActivity(registerintent);
                 finish();
 
@@ -422,6 +422,7 @@ public class Login extends AppCompatActivity implements OnClickListener{
 
             //jsp로부터 받은 리턴 값입니다.
             return receiveMsg;
+
 
         }
 
