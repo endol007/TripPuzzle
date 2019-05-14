@@ -26,7 +26,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="  A-guideR 0.0.3"
+            android:text="  A-guideR 0.0.4"
             android:textColor="#000069"
             android:textSize="15dp" />
     </LinearLayout>
