@@ -14,13 +14,16 @@ import java.util.Date;
 
 public class Community2 extends AppCompatActivity
 {
+
     EditText etname,ettel,etmenu1,etmenu2,etmenu3,etaddr;
     RadioButton rb1,rb2,rb3;
     Restaurant res;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
+
     {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.community2);
         etname = (EditText)findViewById(R.id.etname);

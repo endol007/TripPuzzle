@@ -16,7 +16,7 @@
             android:layout_width="420dp"
             android:layout_height="420dp"
             android:layout_gravity="center"
-            android:src="@drawable/aguider_logo" />
+            android:src="@drawable/travelgo_logo" />
 
         <RelativeLayout
             android:layout_width="fill_parent"
@@ -27,7 +27,6 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_centerInParent="true"
-
                 android:layout_marginBottom="35dp"
                 android:layout_marginTop="35dp"
                 android:indeterminateDrawable="@drawable/circle_progress"/>

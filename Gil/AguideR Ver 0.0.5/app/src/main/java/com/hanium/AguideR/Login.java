@@ -6,7 +6,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -14,9 +13,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.toolbox.Volley;
+
 import com.facebook.CallbackManager;
 import com.facebook.login.widget.LoginButton;
 import com.kakao.auth.AuthType;
@@ -30,7 +27,6 @@ import com.kakao.usermgmt.callback.UnLinkResponseCallback;
 import com.kakao.usermgmt.response.MeV2Response;
 import com.kakao.util.OptionalBoolean;
 import com.kakao.util.exception.KakaoException;
-import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -77,6 +73,8 @@ public class Login extends AppCompatActivity implements OnClickListener{
         final Button registerbtn = (Button) findViewById(R.id.registerbtn);
 
         final Button communitybtn = (Button) findViewById(R.id.communitybtn);
+
+        final Button mapbtn = (Button) findViewById(R.id.mapbtn);
 
         findidbtn = (Button) findViewById(R.id.findidbtn) ;
 
@@ -183,6 +181,18 @@ public class Login extends AppCompatActivity implements OnClickListener{
 
             }
         });
+
+
+        mapbtn.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent mapintent = new Intent(Login.this, MapMain.class);
+                Login.this.startActivity(mapintent);
+                finish();
+            }
+        });
+
+
 
 
 

@@ -41,6 +41,11 @@
 
         </activity>
 
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+
+
         <activity android:name="com.hanium.AguideR.Login"/>
         <activity android:name="com.hanium.AguideR.Main"/>
         <activity android:name="com.hanium.AguideR.Register"/>
@@ -56,6 +61,8 @@
         <activity android:name=".Community"/>
         <activity android:name=".Community2"/>
         <activity android:name=".Community3"/>
+        <activity android:name=".npclocation"/>
+        <activity android:name=".MapMain"/>
 
     </application>
 
