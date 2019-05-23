@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hanium.AguideR">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+
+    <application
+        android:allowBackup="true"
+        android:name="com.hanium.AguideR.KakaoAdp"
+        android:icon="@drawable/travelgo_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="c83107045531ed6992c8ba4a096d8534"
+            />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_key" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBoX-EREKAMeWvpF1sRVs0A3vs_NXWUm1Y" />
+
+        <activity android:name="com.hanium.AguideR.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hanium.AguideR.Login"/>
+        <activity android:name="com.hanium.AguideR.Main"/>
+        <activity android:name="com.hanium.AguideR.Register"/>
+        <activity android:name="com.hanium.AguideR.Findid"/>
+        <activity android:name="com.hanium.AguideR.KaKaoMain"/>
+        <activity android:name="com.hanium.AguideR.GpsTest"/>
+        <activity android:name="com.hanium.AguideR.GpsActivity"/>
+        <activity android:name="com.hanium.AguideR.GpsLogic" />
+        <activity android:name="com.hanium.AguideR.JspRegisterRequest"/>
+        <activity android:name=".JspLoginRegister"/>
+    </application>
+
+</manifest>
