@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="534dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true">
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/userinfo"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:background="@drawable/border">
+
+            <ImageView
+                android:id="@+id/character"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/explorer" />
+
+            <TextView
+                android:id="@+id/level"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/character"
+                android:layout_marginBottom="-40dp"
+                android:text="Lv"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id = "@+id/userlevel"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/level"
+                android:layout_alignBottom="@+id/level"
+                />
+            <TextView
+                android:id="@+id/job"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_toRightOf="@id/character"
+                android:text="직업"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/userjob"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/job"
+                android:layout_marginLeft="80dp"/>
+            <TextView
+                android:id="@+id/exp"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/userjob"
+                android:layout_marginLeft="80dp"
+                android:text="경험치"
+                android:textSize="20sp"
+                android:textColor="#000000"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/exp"
+                android:layout_marginLeft="80dp"/>
+
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/comubtn"
+            android:text="커뮤니티"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_alignParentBottom="true"/>
+        <Button
+            android:id="@+id/arbtn"
+            android:text="AR"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/recbtn"
+            android:text="추천여행지"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="193dp"
+        android:layout_below="@id/relativeLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/mapbtn"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/button1"
+                android:text="지도"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/inventorybtn"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/button1"
+                android:text="인벤토리"
+                android:textSize="20sp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="57dp"
+                android:layout_height="57dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="100dp"
+                app:srcCompat="@android:drawable/ic_input_add" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>
