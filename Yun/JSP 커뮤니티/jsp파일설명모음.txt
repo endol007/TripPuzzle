@@ -1,0 +1,22 @@
+abroadcorse.jsp [해외여행추천코스]
+bbs.jsp [게시판]
+deleteAction.jsp [게시판 글 삭제실행]
+domesticcorse.jsp [국내여행추천코스]
+findfriend.jsp [동행찾기]
+index.jsp [기본]
+infoattraction.jsp [관광명소추천]
+inforestaurant.jsp [맛집추천]
+join.jsp [회원가입]
+joinAction.jsp [회원가입실행]
+login.jsp [로그인]
+loginAction.jsp [로그인실행]
+logoutAction.jsp [로그아웃실행]
+main.jsp [메인]
+update.jsp [글수정]
+updateAction.jsp [글수정실행]
+view.jsp [게시판리스트]
+write.jsp [글작성]
+writeAction.jsp [글작성실행]
+
+
+src폴더>bbs , user

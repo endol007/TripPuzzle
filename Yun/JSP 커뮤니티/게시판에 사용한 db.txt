@@ -1,0 +1,23 @@
+CREATE TABLE USER(
+-> userID VARCHAR(20),
+-> userPassword VARCHAR(20),
+-> userName VARCHAR(20),
+-> userGender VARCHAR(20),
+-> userEmail VARCHAR(50),
+-> PRIMARY KEY (userID)
+-> );
+
+
+CREATE TABLE BBS(
+-> bbsID INT,
+-> bbsTitle VARCHAR(50),
+-> bbsDate DATETIME,
+-> bbsContent VARCHAR(2048),
+-> bbsAvailable INT,
+-> PRIMARY KEY (bbsID)
+-> );
+
+BBS TABLE 게시글 정보를 담음
+bbsID 글번호, bbsTitle 글제목
+bbsDate 작성날짜, bbsContent 글내용
+bbsAvailable 글이 하나도 없을 경우에 사용
